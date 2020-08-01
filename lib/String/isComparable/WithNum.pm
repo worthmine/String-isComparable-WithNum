@@ -46,7 +46,7 @@ B<ignore> the difference between C<E<lt>=E<gt>> and C<cmp>
            
 =head1 DESCRIPTION
 
-I have solved L<The first Issue|https://github.com/worthmine/String-isComparable-WithNum/issues/1>
+I have solved The IssueL<#1|https://github.com/worthmine/String-isComparable-WithNum/issues/1>
 
 =head1 LICENSE
 

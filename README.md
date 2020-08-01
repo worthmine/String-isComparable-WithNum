@@ -16,7 +16,7 @@ String::isComparable::WithNum - It's a test implement to
 
 # DESCRIPTION
 
-I have solved [The first Issue](https://github.com/worthmine/String-isComparable-WithNum/issues/1)
+I have solved The Issue[#1](https://github.com/worthmine/String-isComparable-WithNum/issues/1)
 
 # LICENSE
 
