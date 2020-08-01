@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's a test implementing between Str and Int ",
+   "abstract" : "It's a test implement to B<ignore> the difference between C<E<lt>=E<gt>> and C<cmp> ",
    "author" : [
       "worthmine <worthmine@gmail.com>"
    ],
@@ -65,7 +65,7 @@
          "web" : "https://github.com/worthmine/String-isComparable-WithNum"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_authority" : "cpan:WORTHMINE",
    "x_serialization_backend" : "JSON::PP version 2.27400_02",
    "x_static_install" : 1

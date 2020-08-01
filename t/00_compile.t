@@ -1,23 +1,24 @@
 use strict;
 use warnings;
-use Test::More 0.98 tests => 8;
+use Test::More 0.98 tests => 11;
 
-use lib 'lib';
+use lib "lib";
 
-use_ok('String::isComparable::WithNum');    # 1
-my $str = new_ok( 'String::isComparable::WithNum', [ value => 'strings' ] );    # 2
+use_ok("String::isComparable::WithNum");    # 1
 
-note q|where value is a 'strings'|;
-cmp_ok( $str, 'eq', 'strings', q|Succeeded in comparing with strings| );            # 3
-cmp_ok( $str, '==', 100,       q|Succeeded in comparing with Int| );                # 4
-cmp_ok( $str, '==', 'strings', q|Succeeded in comparing with strings by '=='| );    # 5
+note 'where value is a Str';
+my $str = new_ok( "String::isComparable::WithNum", [ value => "strings" ] );    # 2
+cmp_ok( $str, "eq", "strings", 'compared with strings by "eq"' );               # 3
+cmp_ok( $str, "==", "strings", 'compared with strings by "=="' );               # 4
+cmp_ok( $str, "ne", 100,       'compared with strings by "ne"' );               # 5
+cmp_ok( $str, "!=", 100,       'compared with Int by "!="' );                   # 6
 
-$str = String::isComparable::WithNum->new( value => '100' );
-
-note q|where value is an 'Int'|;
-cmp_ok( $str, 'eq', '100', q|Succeeded in comparing with strings| );                # 6
-cmp_ok( $str, '==', 100,   q|Succeeded in comparing with Int| );                    # 7
-cmp_ok( $str, '==', '100', q|Succeeded in comparing with strings by '=='| );        # 8
+note 'where value is an Int';
+my $num = new_ok( "String::isComparable::WithNum", [ value => 100 ] );          # 7
+cmp_ok( $num, "eq", "100", 'compared with strings by "eq"' );                   # 8
+cmp_ok( $num, "eq", 100,   'compared with Int by "eq"' );                       # 9
+cmp_ok( $num, "==", 100,   'compared with Int Int by "=="' );                   #10
+cmp_ok( $num, "==", "100", 'compared with strings by "=="' );                   #11
 
 done_testing;
 
