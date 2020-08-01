@@ -35,11 +35,16 @@ String::isComparable::WithNum - It's a test implementing between Str and Int
 
 =head1 SYNOPSIS
 
-    use String::isComparable::WithNum;
+ use String::isComparable::WithNum;
+ my $str = String::isComparable::WithNum->new( value => 'strings' );
 
+ say q|Succeeded in comparing with strings| if $str eq 'strings';            
+ say q|Succeeded in comparing with strings| if $str == 100;
+ say q|Succeeded in comparing with strings| if $str == 'strings';
+           
 =head1 DESCRIPTION
 
-L<Where is my mistake?|https://gist.github.com/worthmine/5ff9a0f13195e9532f5a0d80c478b84c>
+L<The all of the problem is this Issue|https://github.com/worthmine/String-isComparable-WithNum/issues/1>
 
 =head1 LICENSE
 
