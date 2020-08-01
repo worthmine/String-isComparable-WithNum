@@ -1,6 +1,6 @@
 # NAME
 
-String::isComparable::WithNum - It's new $module
+String::isComparable::WithNum - It's a test implementing between Str and Int 
 
 # SYNOPSIS
 
@@ -8,7 +8,7 @@ String::isComparable::WithNum - It's new $module
 
 # DESCRIPTION
 
-String::isComparable::WithNum is ...
+[Where is my mistake?](https://gist.github.com/worthmine/5ff9a0f13195e9532f5a0d80c478b84c)
 
 # LICENSE
 

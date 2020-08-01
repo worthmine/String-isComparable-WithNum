@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "It's a test implementing between Str and Int ",
    "author" : [
       "worthmine <worthmine@gmail.com>"
    ],
@@ -42,6 +42,8 @@
       },
       "runtime" : {
          "requires" : {
+            "Mouse" : "0",
+            "overload" : "0",
             "perl" : "5.008001"
          }
       },
@@ -52,6 +54,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/worthmine/String-isComparable-WithNum/issues"
+      },
+      "homepage" : "https://github.com/worthmine/String-isComparable-WithNum",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/worthmine/String-isComparable-WithNum.git",
+         "web" : "https://github.com/worthmine/String-isComparable-WithNum"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:WORTHMINE",
    "x_serialization_backend" : "JSON::PP version 2.27400_02",
